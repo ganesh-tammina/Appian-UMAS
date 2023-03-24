@@ -7202,14 +7202,14 @@ left: -40px;
 }
 
 .first-section{
-    background-image: url('../TBMS/Vector-bg-1.svg');
+    background-image: url('../UAMS-images/UAMS-images/home-hero-bg-shape.svg');
     width: 100%;
     height: auto;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
     @media(min-width:992px){
-        height: 160vh;
+        // height: 160vh;
     }
     .first-row{
         height: 90vh;
@@ -7236,92 +7236,69 @@ left: -40px;
             @media(max-width:320px){
                 font-size: 38px;
             }
+            .management{
+                color: #fff;
+                font-size:36px;
+            }
+        }
+        h3{
+            font-size: 3rem;
+            font-weight: 200;
         }
        .first-section-image{
-        background-image: url('../TBMS/Mockup-Home.svg');
-    width: 68%;
-    height: 80%;
-    position: absolute;
-    background-repeat: no-repeat;
-    background-position: right;
-   right: 7em;
-    background-size: contain;
-
-       }
-    }
-        .first-section_content{
-    font-size: 39px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    -webkit-text-stroke: 1px #ffff;
-    -webkit-text-fill-color: #189795;
-    font-weight: 700;
-    font-style: italic;
-
-        }
-       
-    .gare-circle-low{
-        position: absolute;
-        bottom: 0;
-        right: calc(100% - 90%);
-        img{
-            animation: rotating 7s linear infinite
-        }
-       }
-       .gare-circle-samll{
-        position: absolute;
-        bottom: 10px;
-        right: calc(100% - 75%); 
-        img{
-            animation: rotating 7s linear infinite
-        }
-      }
-    .man-path{
-        position: absolute;
-        top:0;
-        right:-31px;
-        img{
-            width: 250px;
-            height: 550px;
-        }
-        .daise-img{
-            position: absolute;
-            width: 100px;
-            margin-top: 65px;
-            height: 100px
-        }
-        // &::after{
-        //     content: '';
-        //     background-image: url(../TAMS\ imgs/low-code-3D-Cube-2-small.svg);
-        //     position: absolute;
-        //     width: 100px;
-        //     height: 100px;
-        //     bottom: 0;
-        //     background-size: contain;
-        //     background-repeat: no-repeat;
-        //     }
-    }
-    .gare-circle{
+        // background-image: url('../UAMS-images/UAMS-images/mockup-home\ copy\ 1.svg');
+        // height: 80%;
+        background-repeat: no-repeat;
+        background-size: contain;
         position: relative;
-    top: -161px;
-    left: 0;
-    img{
-        animation: rotating 7s linear infinite
-    }
-    }
-    .laptop-div{
+        top: 2rem;
+         left: -62px;
+       }
+       .sitting-person{
+        img{
+            position: absolute;
+            top: 16rem;
+            right: 18rem;
+            width: 46%;
+        
+        }
+       }
+       .books{
         position: absolute;
-        top: 0;
-        bottom: 0;
-        margin: 0;
-        left: 0;
-        right: 0;
+        bottom: -50px;
+        left: 40rem;
+        z-index: -1;
+       }
+       .house{
+        position: absolute;
+        bottom: -78px;
+        left: -105px;
+       }
     }
-}
+       .laptop-view{
+        background-image: url(../UAMS-images/UAMS-images/Home-flag-house.svg);
+        background-repeat: no-repeat;
+        bottom: 0;
+        .house-1{
+            position: absolute;
+        }
+        .cube{
+            img{
+            position: absolute;
+            bottom: -17rem;
+            right: 5px;
+            animation: rotating 7s linear infinite;
+            }
+        }
+       }
+}     
+    
+     
+    
+    
+ 
 
-.into-card{
-    color: #f0f0f0;
-    border-radius: 10px;
-}
+
 
 .methodology{
     background-image: url('../TBMS/Methedology-bg.svg');
@@ -8180,7 +8157,7 @@ position: relative;
     object-fit: contain;
 }
  .tammina-session{
-    background-image: url('../TBMS/Vector-background.svg');
+    background-image: url('../UAMS-images/UAMS-images/');
     width: 100%;
     background-size: cover;
     display: grid;
