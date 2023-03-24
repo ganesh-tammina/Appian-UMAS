@@ -6906,6 +6906,7 @@ area {
   top: 16rem;
   right: 18rem;
   width: 46%;
+  animation: movebounce-up 8s infinite;
 }
 .first-section .first-section-content .books {
   position: absolute;
