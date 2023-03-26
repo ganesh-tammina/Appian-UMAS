@@ -6935,7 +6935,7 @@ area {
 }
 
 .methodology {
-  background-image: url("../TBMS/Methedology-bg.svg");
+  background-image: url("../UAMS-images/UAMS-images/hero-bg-shape (1).svg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -7043,6 +7043,86 @@ area {
   margin: auto;
   color: yellow;
   font-size: 18px;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.image-container img {
+  position: absolute;
+}
+@media (max-width: 767px) {
+  .image-container img {
+    display: none;
+  }
+}
+.image-container .img-1 {
+  top: -33rem;
+  width: 18%;
+  left: 46rem;
+  z-index: 2;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .image-container .img-1 {
+    top: -26rem;
+    left: 39rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .image-container .img-1 {
+    top: -20rem;
+    left: 29rem;
+  }
+}
+
+.img-2 {
+  top: -38rem;
+  left: 6rem;
+  z-index: 1;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .img-2 {
+    top: -30rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .img-2 {
+    top: -23rem;
+  }
+}
+
+.img-3 {
+  top: -14rem;
+  right: 34rem;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .img-3 {
+    right: 26rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .img-3 {
+    right: 16rem;
+  }
+}
+
+.img-4 {
+  top: -7rem;
+  z-index: 3;
+  right: 36rem;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .img-4 {
+    right: 28rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .img-4 {
+    right: 18rem;
+  }
 }
 
 .left-part {
@@ -7759,7 +7839,7 @@ area {
 }
 
 .tammina-session {
-  background-image: url("../UAMS-images/UAMS-images/");
+  background-image: url("../UAMS-images/UAMS-images/hero-bg-shape (2).svg");
   width: 100%;
   background-size: cover;
   display: grid;
@@ -7787,7 +7867,7 @@ area {
 }
 .tammina-session .design-card-support {
   height: 150px;
-  background: linear-gradient(96.21deg, #F0962C 22.34%, #25C0CA 73.25%);
+  background: linear-gradient(96.21deg, #247378 22.34%, #782470 73.25%);
   box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.44);
   border-radius: 33px;
   display: grid;
@@ -7816,7 +7896,7 @@ area {
 }
 .tammina-session .tech-robo-align {
   position: relative;
-  top: 41px;
+  top: 0;
 }
 .tammina-session .tammina-block {
   position: relative;
@@ -7991,120 +8071,15 @@ area {
   font-weight: 400;
 }
 
-.ellipse-laptop {
-  position: relative;
-  width: 35%;
-  left: 10%;
-  top: -53px;
-}
-@media (max-width: 767px) {
-  .ellipse-laptop {
-    display: none;
-  }
-}
-.ellipse-laptop img {
-  position: absolute;
-}
-.ellipse-laptop .img-1 {
-  left: 0;
-  top: 0;
-  width: 59%;
-}
-.ellipse-laptop .img-2 {
-  width: 64%;
-  bottom: -21%;
-  right: 39%;
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .ellipse-laptop .img-2 {
-    bottom: 39%;
-  }
-}
-.ellipse-laptop .img-3 {
-  width: 42%;
-  left: 11%;
-  top: 13%;
-}
-
-.polygon-circle {
-  position: relative;
-}
-.polygon-circle img {
-  position: absolute;
-  bottom: 15rem;
-  right: -3rem;
-}
-@media (max-width: 767px) {
-  .polygon-circle {
-    display: none;
-  }
-}
-.polygon-circle .rotate {
-  animation: rotation 2s infinite linear;
-}
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.pulser {
-  width: 60px;
-  position: absolute;
-  bottom: -68rem;
-  border-radius: 50%;
-}
-@media (min-width: 768px) and (max-width: 1199px) {
-  .pulser {
-    bottom: -97rem;
-  }
-}
-@media (max-width: 767px) {
-  .pulser {
-    display: none;
-  }
-}
-
-.pulser::after {
-  animation: pulse 1000ms cubic-bezier(0.9, 0.7, 0.5, 0.9) infinite;
-}
-
-@keyframes pulse {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    transform: scale(1.4);
-    opacity: 0.4;
-  }
-}
-.pulser::after {
-  content: "";
-  position: absolute;
+.rectangle-blue {
+  background: #2D0D4D;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0px -10px 58px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  height: 200px;
   width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: gold;
-  border-radius: 50%;
-}
-
-.white-circle {
-  position: absolute;
-  top: 188rem;
-  left: 70rem;
-}
-@media (max-width: 767px) {
-  .white-circle {
-    display: none;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .white-circle {
-    top: 247rem;
-    left: 48rem;
-  }
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */
