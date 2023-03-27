@@ -8380,11 +8380,13 @@ area {
   background-repeat: no-repeat;
   background-position: bottom;
 }
+
 @media (min-width: 992px) {
   .first-section {
     height: 160vh;
   }
 }
+
 .first-section .first-row {
   height: 90vh;
   -webkit-box-align: center;
@@ -8429,6 +8431,7 @@ area {
     font-size: 38px;
   }
 }
+
 .first-section .first-section-content .first-section-image {
   background-image: url("../TBMS/Mockup-Home.svg");
   width: 68%;
@@ -8439,6 +8442,24 @@ area {
   right: 7em;
   background-size: contain;
 }
+
+.first-section .first-section-content .part1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
 .first-section .first-section_content {
   font-size: 39px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -8570,6 +8591,7 @@ area {
   left: 8rem;
   bottom: 315px;
 }
+
 @media (max-width: 991px) {
   .methodology .First-text .arrow-1 {
     bottom: 317px;
@@ -8581,6 +8603,7 @@ area {
   right: 8rem;
   bottom: 315px;
 }
+
 @media (max-width: 991px) {
   .methodology .First-text .arrow-2 {
     bottom: 317px;
@@ -8683,6 +8706,32 @@ area {
   top: 21rem;
 }
 
+.bg {
+  background-image: url("../img/hero-bg-shape.svg");
+  /* background-position: top; */
+  height: 160vh;
+  background-position: center;
+  background-size: cover;
+  display: -ms-grid;
+  display: grid;
+  background-repeat: no-repeat;
+  place-content: center;
+}
+
+@media (max-width: 767px) {
+  .bg {
+    height: 230vh;
+  }
+}
+
+.bg p {
+  color: #ffff;
+}
+
+.second-session {
+  text-align: center;
+}
+
 .second-session.second-session-bg {
   background-image: url("../TAMS imgs/Over-view-Ifographics.svg");
   width: 100%;
@@ -8690,17 +8739,46 @@ area {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
+  position: relative;
+  top: calc(100vh - 64vh);
 }
+
+.second-session .second-session-overview {
+  color: #36105C;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #36105C;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 5px;
+  margin-top: 115px;
+}
+
+.second-session .second-session-overview::before {
+  content: '';
+  width: 55px;
+  height: 8px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  margin: auto;
+  background: #36105C;
+}
+
 .second-session .second-session-text {
   font-weight: 800;
   font-size: 20px;
   line-height: 30px;
   text-transform: uppercase;
-  color: #243C78;
-  border-bottom: 2px solid #243C78;
+  color: white;
+  border-bottom: 2px solid white;
   display: inline-block;
   position: relative;
   padding-bottom: 5px;
+  margin-top: 115px;
 }
 
 .second-session .second-session-text::before {
@@ -8712,7 +8790,7 @@ area {
   right: 0;
   bottom: -4px;
   margin: auto;
-  background: #243C78;
+  background: white;
 }
 
 .second-session p {
@@ -8731,6 +8809,15 @@ area {
       flex-wrap: wrap;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .second-session .card-flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .second-session .card-flex p {
   font-size: 14px;
   font-weight: 500;
@@ -8740,6 +8827,34 @@ area {
   display: -ms-grid;
   display: grid;
   place-content: center;
+}
+
+.part2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .part2 p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .part2 p {
+    font-size: 15px;
+  }
 }
 
 .third-session {
@@ -9149,16 +9264,49 @@ area {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  height: 370px;
+  width: 400px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .card-align {
+    height: 320px;
+    width: 345px;
+  }
+}
+
+@media (max-width: 767px) {
+  .card-align {
+    height: 300px;
+    width: auto;
+  }
+}
+
+.card-align .part9 {
+  position: absolute;
+  left: -35px;
+  top: 180px;
 }
 
 .card-align-left {
-  margin-left: auto;
+  position: relative;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .card-align-left {
+    left: 8px;
+  }
 }
 
 @media (min-width: 992px) {
   .card-align-left {
-    position: relative;
     left: 22px;
+  }
+}
+
+@media (max-width: 767px) {
+  .card-align-left {
+    top: 8px;
   }
 }
 
@@ -9351,15 +9499,14 @@ area {
   line-height: 45px;
   text-transform: uppercase;
   color: #243C78;
-  border-bottom: 2px solid 
- #243C78;
+  border-bottom: 2px solid  #243C78;
   display: inline-block;
   position: relative;
   padding-bottom: 5px;
 }
 
 .second-session-text.second-session-text-tammina {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #ffff;
   font-weight: 700;
 }
 
@@ -9571,24 +9718,29 @@ area {
   -webkit-animation: rotating 7s linear infinite;
           animation: rotating 7s linear infinite;
 }
+
 .tammina-session .tammina-session-align {
   position: relative;
   top: 8rem;
 }
+
 .tammina-session .design-card-support {
   height: 150px;
   background: linear-gradient(96.21deg, #F0962C 22.34%, #25C0CA 73.25%);
-  box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.44);
+  -webkit-box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.44);
+          box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.44);
   border-radius: 33px;
   display: -ms-grid;
   display: grid;
   text-align: center;
 }
+
 @media (max-width: 991px) {
   .tammina-session .design-card-support {
     height: 230px;
   }
 }
+
 .tammina-session .design-card-support .Connect-content {
   display: -ms-grid;
   display: grid;
@@ -9754,6 +9906,42 @@ area {
   content: '';
 }
 
+.key-features-section .features-text .part3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.key-features-section .features-text .part6 {
+  float: right;
+}
+
+.part4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: smaller;
+  padding: 10px;
+}
+
+.part4 img {
+  width: 30px;
+}
+
+.part4 p {
+  margin-left: 5px;
+}
+
 .aligns {
   z-index: 1;
   position: relative;
@@ -9813,29 +10001,35 @@ area {
   left: 10%;
   top: -53px;
 }
+
 @media (max-width: 767px) {
   .ellipse-laptop {
     display: none;
   }
 }
+
 .ellipse-laptop img {
   position: absolute;
 }
+
 .ellipse-laptop .img-1 {
   left: 0;
   top: 0;
   width: 59%;
 }
+
 .ellipse-laptop .img-2 {
   width: 64%;
   bottom: -21%;
   right: 39%;
 }
+
 @media (min-width: 768px) and (max-width: 991px) {
   .ellipse-laptop .img-2 {
     bottom: 39%;
   }
 }
+
 .ellipse-laptop .img-3 {
   width: 42%;
   left: 11%;
@@ -9845,25 +10039,43 @@ area {
 .polygon-circle {
   position: relative;
 }
+
 .polygon-circle img {
   position: absolute;
   bottom: 15rem;
   right: -3rem;
 }
+
 @media (max-width: 767px) {
   .polygon-circle {
     display: none;
   }
 }
+
 .polygon-circle .rotate {
-  animation: rotation 2s infinite linear;
+  -webkit-animation: rotation 2s infinite linear;
+          animation: rotation 2s infinite linear;
 }
-@keyframes rotation {
+
+@-webkit-keyframes rotation {
   from {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
@@ -9873,11 +10085,13 @@ area {
   bottom: -68rem;
   border-radius: 50%;
 }
+
 @media (min-width: 768px) and (max-width: 1199px) {
   .pulser {
     bottom: -97rem;
   }
 }
+
 @media (max-width: 767px) {
   .pulser {
     display: none;
@@ -9885,7 +10099,19 @@ area {
 }
 
 .pulser::after {
-  animation: pulse 1000ms cubic-bezier(0.9, 0.7, 0.5, 0.9) infinite;
+  -webkit-animation: pulse 1000ms cubic-bezier(0.9, 0.7, 0.5, 0.9) infinite;
+          animation: pulse 1000ms cubic-bezier(0.9, 0.7, 0.5, 0.9) infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+    opacity: 0.4;
+  }
 }
 
 @keyframes pulse {
@@ -9893,12 +10119,14 @@ area {
     opacity: 0;
   }
   50% {
-    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
     opacity: 0.4;
   }
 }
+
 .pulser::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -9913,14 +10141,46 @@ area {
   top: 188rem;
   left: 70rem;
 }
+
 @media (max-width: 767px) {
   .white-circle {
     display: none;
   }
 }
+
 @media (min-width: 768px) and (max-width: 991px) {
   .white-circle {
     top: 247rem;
     left: 48rem;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+.part7 {
+  position: absolute;
+}
+
+.part7::before {
+  content: "";
+  right: 90px;
+  top: 195rem;
+  position: relative;
+}
+
+.threed-cube {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -62px;
+  -webkit-animation: rotated360 9s infinite linear;
+          animation: rotated360 9s infinite linear;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .threed-cube {
+    margin-top: -62px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
