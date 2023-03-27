@@ -7279,6 +7279,11 @@ left: -40px;
         background-image: url(../UAMS-images/UAMS-images/Home-flag-house.svg);
         background-repeat: no-repeat;
         bottom: 0;
+        background-position: bottom;
+        height: 100%;
+        display: grid;
+        place-content: center;
+    
         .house-1{
             position: absolute;
         }
