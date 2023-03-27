@@ -5926,6 +5926,7 @@ Footer Area
     background-position: center center;
     background-repeat: no-repeat;
     z-index: 1;
+    margin-top: 135px;
 }
 .footer-top {
     border-bottom: 1px solid #e6e6e6;
@@ -7307,6 +7308,7 @@ left: -40px;
         width: 100%;
         display: grid;
         place-content: center;
+        height: 100vh;
         .methodology-session-text{
             font-weight: 500;
             font-size: 30px;
@@ -8213,6 +8215,8 @@ position: relative;
   }
 .reports-img{
     object-fit: contain;
+    position: relative;
+    z-index: 3;
 }
  .tammina-session{
     background-image: url('../UAMS-images/UAMS-images/hero-bg-shape\ \(2\).svg');
@@ -8221,25 +8225,52 @@ position: relative;
     display: grid;
     place-content: center;
     padding: 50px 0px;
+    height: 1100px;
     .tammina-session-reports{
         position: relative;
         &::after{
         content:'';
-        background-image: url('../TAMS\ imgs/Vector-squre.svg');
+        background-image: url('../UAMS-images/UAMS-images/Home-3D-Cube.svg');
         position: absolute;
         background-repeat: no-repeat;
         width: 100px;
         height: 100px;
         background-size: contain;
-        right: 0;
-        top: -83px;
+        right: 117px;
+        top: 40rem;
         animation: rotating 7s linear infinite;
+        z-index: 3;
 
         }
+        &::before{
+            content:'';
+            background-image: url('../UAMS-images/UAMS-images/Home-3D-Cube.svg');
+            position: absolute;
+            background-repeat: no-repeat;
+            width: 100px;
+            height: 100px;
+            background-size: contain;
+            left: 10rem;
+            top: 16rem;
+            animation: rotating 7s linear infinite;
+            z-index: 2;
+            }
     }
     .tammina-session-align{
         position: relative;
-        top:8rem
+        bottom:5rem;
+        &::after{
+            content:'';
+            background-image: url('../UAMS-images/UAMS-images/Home-3D-Cube.svg');
+            position: absolute;
+            background-repeat: no-repeat;
+            width: 100px;
+            height: 100px;
+            background-size: contain;
+            right:74rem;
+            top: 0;
+            animation: rotating 7s linear infinite;
+            }
     }
     .design-card-support{
         height: 150px;
@@ -8271,7 +8302,7 @@ border-radius: 33px;
     }
     .tech-robo-align{
         position: relative;
-        top: 0;
+        top: 113px;
     }
     .tammina-block{
         position: relative;
@@ -8457,10 +8488,48 @@ background: #2D0D4D;
 border: 2px solid #FFFFFF;
 box-shadow: 0px -10px 58px rgba(0, 0, 0, 0.25);
 border-radius: 10px;
-   height: 200px;
+   height: auto;
    width: 100%;
    font-size: 13px;
    display: flex;
    flex-direction: column;
    justify-content: center;
+   position: relative;
+   left: 75px;
+   top: 52px;
+   @media (max-width:991px){
+    top: 0;
+   }
+   &::before{
+    content:'';
+    background-image: url('../UAMS-images/UAMS-images/why-tech-3D-traingle-1-big.svg');
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    left: 10rem;
+    top: 16rem;
+    animation: MoveUpDown 9s linear infinite;
+    }
+    @keyframes MoveUpDown {
+        from {
+            top: 63px;
+        }
+        to { 
+            bottom: 100px;
+        }
+    }
+    &::after{
+        content:'';
+        background-image: url('../UAMS-images/UAMS-images/Home-3D-Cube.svg');
+        position: absolute;
+        background-repeat: no-repeat;
+        width: 100px;
+        height: 100px;
+        background-size: contain;
+        right:0;
+        top: 7rem;
+        animation: rotating 7s linear infinite;
+        }
 }

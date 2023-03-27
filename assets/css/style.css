@@ -5752,6 +5752,7 @@ Footer Area
   background-position: center center;
   background-repeat: no-repeat;
   z-index: 1;
+  margin-top: 135px;
 }
 
 .footer-top {
@@ -6941,6 +6942,7 @@ area {
   width: 100%;
   display: grid;
   place-content: center;
+  height: 100vh;
 }
 .methodology .methodology-session-text {
   font-weight: 500;
@@ -7836,6 +7838,8 @@ area {
 .reports-img {
   -o-object-fit: contain;
      object-fit: contain;
+  position: relative;
+  z-index: 3;
 }
 
 .tammina-session {
@@ -7845,25 +7849,52 @@ area {
   display: grid;
   place-content: center;
   padding: 50px 0px;
+  height: 1100px;
 }
 .tammina-session .tammina-session-reports {
   position: relative;
 }
 .tammina-session .tammina-session-reports::after {
   content: "";
-  background-image: url("../TAMS imgs/Vector-squre.svg");
+  background-image: url("../UAMS-images/UAMS-images/Home-3D-Cube.svg");
   position: absolute;
   background-repeat: no-repeat;
   width: 100px;
   height: 100px;
   background-size: contain;
-  right: 0;
-  top: -83px;
+  right: 117px;
+  top: 40rem;
   animation: rotating 7s linear infinite;
+  z-index: 3;
+}
+.tammina-session .tammina-session-reports::before {
+  content: "";
+  background-image: url("../UAMS-images/UAMS-images/Home-3D-Cube.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  left: 10rem;
+  top: 16rem;
+  animation: rotating 7s linear infinite;
+  z-index: 2;
 }
 .tammina-session .tammina-session-align {
   position: relative;
-  top: 8rem;
+  bottom: 5rem;
+}
+.tammina-session .tammina-session-align::after {
+  content: "";
+  background-image: url("../UAMS-images/UAMS-images/Home-3D-Cube.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  right: 74rem;
+  top: 0;
+  animation: rotating 7s linear infinite;
 }
 .tammina-session .design-card-support {
   height: 150px;
@@ -7896,7 +7927,7 @@ area {
 }
 .tammina-session .tech-robo-align {
   position: relative;
-  top: 0;
+  top: 113px;
 }
 .tammina-session .tammina-block {
   position: relative;
@@ -8076,10 +8107,50 @@ area {
   border: 2px solid #FFFFFF;
   box-shadow: 0px -10px 58px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  height: 200px;
+  height: auto;
   width: 100%;
   font-size: 13px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+  left: 75px;
+  top: 52px;
+}
+@media (max-width: 991px) {
+  .rectangle-blue {
+    top: 0;
+  }
+}
+.rectangle-blue::before {
+  content: "";
+  background-image: url("../UAMS-images/UAMS-images/why-tech-3D-traingle-1-big.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  left: 10rem;
+  top: 16rem;
+  animation: MoveUpDown 9s linear infinite;
+}
+@keyframes MoveUpDown {
+  from {
+    top: 63px;
+  }
+  to {
+    bottom: 100px;
+  }
+}
+.rectangle-blue::after {
+  content: "";
+  background-image: url("../UAMS-images/UAMS-images/Home-3D-Cube.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  right: 0;
+  top: 7rem;
+  animation: rotating 7s linear infinite;
 }/*# sourceMappingURL=style.css.map */
