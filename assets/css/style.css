@@ -6853,18 +6853,8 @@ area {
   background-position: bottom;
 }
 .first-section .first-row {
-  height: 90vh;
+  height: 95vh;
   align-items: center;
-}
-@media (min-width: 1350px) {
-  .first-section .first-row {
-    height: 85vh;
-  }
-}
-@media (min-width: 1550px) {
-  .first-section .first-row {
-    height: 65vh;
-  }
 }
 .first-section .first-section-content {
   height: 100%;

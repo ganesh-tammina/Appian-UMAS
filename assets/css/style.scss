@@ -7213,14 +7213,8 @@ left: -40px;
         // height: 160vh;
     }
     .first-row{
-        height: 90vh;
+        height: 95vh;
         align-items: center;
-        @media(min-width:1350px){
-            height: 85vh;
-        }
-        @media(min-width:1550px){
-            height: 65vh;
-        }
     }
     .first-section-content{
         height: 100%;
