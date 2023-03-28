@@ -7506,14 +7506,17 @@ left: -40px;
 .bg {
     background-image: url("../img/hero-bg-shape.svg");
     /* background-position: top; */
-    height: 160vh;
+    height: 165vh;
     background-position: center;
     background-size: cover;
     display: grid;
     background-repeat: no-repeat;
     place-content: center;
     @media (max-width:767px){
-        height: 275vh;
+        height: 230vh !important;
+    }
+    @media (max-width:1200px){
+        height: 200vh;
     }
     p{
         color: #ffff;
@@ -7530,7 +7533,13 @@ left: -40px;
         background-position: bottom;
         background-size: contain;
         position: relative;
-        top: calc(100vh - 64vh);
+        top: calc(100vh - 85vh);
+        @media (max-width: 767px){
+            top: 195px;
+        }
+        @media (min-width: 768px) and (max-width: 991px){
+            top: 30vh;
+        }
     }
     .second-session-overview{
         color: #36105C;
@@ -7542,7 +7551,7 @@ left: -40px;
         display: inline-block;
         position: relative;
         padding-bottom: 5px;
-        margin-top: 115px;
+        // margin-top: 115px;
         &::before{
             content: '';
             width: 55px;
@@ -7565,7 +7574,10 @@ left: -40px;
         display: inline-block;
         position: relative;
         padding-bottom: 5px;
-        margin-top: 115px;
+        // margin-top: 115px;
+        @media (max-width:767px){
+            margin-top: 90px;
+        }
     
         &::before{
             content: '';
@@ -7603,7 +7615,7 @@ left: -40px;
     }
 }
 
-.part2{
+.overview-left-card{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7962,10 +7974,13 @@ left: -40px;
         height: 300px;
         width: auto;
     }
+    // &::before{
+
+    // }
     .part9{
         position: absolute;
         left: -72px;
-        top: 165px;
+        top: 200px;
         @media (max-width:991px){
             left: -65px;
             top: 145px;
@@ -8504,6 +8519,7 @@ font-weight: bold;
     
     .features-text{
         position: relative;
+        margin-top: 12rem;
         // margin-top: 50px;
         &::after{
           content: '';
@@ -8513,7 +8529,7 @@ font-weight: bold;
             content: '';
             
         }
-        .part3{
+        .service-content{
             display: flex;
             align-items: center;
             justify-content: center;
@@ -8524,7 +8540,7 @@ font-weight: bold;
         }
     }
 }
-.part4{
+.service-sub-content{
     display: flex;
     font-size: smaller;
     padding: 10px;
@@ -8638,4 +8654,40 @@ border-radius: 10px;
         top: 7rem;
         animation: rotating 7s linear infinite;
         }
+}
+
+.threed-cube{
+    display: flex;
+    justify-content: center;
+    margin-top: -62px;
+    animation: rotated360 9s infinite linear;
+    @media (min-width:768px) and (max-width: 991px){
+        margin-top: -62px;
+    }
+}
+
+.service-second-card{
+position: relative;
+&::after {
+    content: '';
+    background-image: url("../img/why-tech-3D-traingle-2-big.svg");
+    width: 75px;
+    height: 75px;
+    background-size: contain;
+    bottom: -89px;
+    position: absolute;
+    right: 0;
+}
+}
+
+.triangle-img{
+    position: relative;
+    &::after{
+        content: " ";
+        background-image: url("../img/why-tech-3D-traingle-1-big.svg");
+    }
+}
+
+.part11{
+margin-top: 25rem;
 }
