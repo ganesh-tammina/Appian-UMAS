@@ -7212,7 +7212,6 @@ area {
   font-size: 20px;
   line-height: 30px;
   text-transform: uppercase;
-  color: white;
   border-bottom: 2px solid white;
   display: inline-block;
   position: relative;
@@ -7602,7 +7601,6 @@ area {
   left: -72px;
   top: 165px;
 }
-
 @media (max-width: 991px) {
   .card-align .part9 {
     left: -65px;
@@ -7939,6 +7937,11 @@ area {
   position: relative;
   z-index: 3;
 }
+@media (min-width: 768px) and (max-width: 1199) {
+  .reports-img {
+    top: 8rem;
+  }
+}
 
 .tammina-session {
   background-image: url("../UAMS-images/UAMS-images/hero-bg-shape (2).svg");
@@ -7949,8 +7952,18 @@ area {
   padding: 50px 0px;
   height: 1100px;
 }
+@media (max-width: 767px) {
+  .tammina-session {
+    height: 1750px;
+  }
+}
 .tammina-session .tammina-session-reports {
   position: relative;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .tammina-session .tammina-session-reports {
+    top: 9rem;
+  }
 }
 .tammina-session .tammina-session-reports::after {
   content: "";
@@ -7980,7 +7993,12 @@ area {
 }
 .tammina-session .tammina-session-align {
   position: relative;
-  bottom: 5rem;
+  bottom: 0;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .tammina-session .tammina-session-align {
+    top: 37px;
+  }
 }
 .tammina-session .tammina-session-align::after {
   content: "";
@@ -8007,6 +8025,12 @@ area {
     height: 230px;
   }
 }
+@media (max-width: 767px) {
+  .tammina-session .design-card-support {
+    position: relative;
+    top: 7rem;
+  }
+}
 .tammina-session .design-card-support .Connect-content {
   display: grid;
   place-content: center;
@@ -8029,6 +8053,11 @@ area {
 }
 .tammina-session .tammina-block {
   position: relative;
+}
+@media (max-width: 767px) {
+  .tammina-session .tammina-block {
+    top: 10rem;
+  }
 }
 .tammina-session .tammina-block::after {
   content: "";
@@ -8236,9 +8265,15 @@ area {
   left: 75px;
   top: 52px;
 }
-@media (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .rectangle-blue {
     top: 0;
+  }
+}
+@media (max-width: 767px) {
+  .rectangle-blue {
+    top: 83px;
+    left: 15px;
   }
 }
 .rectangle-blue::before {
@@ -8272,4 +8307,19 @@ area {
   right: 0;
   top: 7rem;
   animation: rotating 7s linear infinite;
+}
+
+@media (max-width: 480px) {
+  .methodology-mobile {
+    position: relative;
+    top: 9rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .appian-code-mobile {
+    position: relative;
+    top: 14rem;
+  }
 }/*# sourceMappingURL=style.css.map */
