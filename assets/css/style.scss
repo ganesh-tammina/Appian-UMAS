@@ -7569,7 +7569,7 @@ left: -40px;
         font-size: 20px;
         line-height: 30px;
         text-transform: uppercase;
-        color: white;
+        // color: white;
         border-bottom: 2px solid white;
         display: inline-block;
         position: relative;
@@ -8315,6 +8315,10 @@ position: relative;
     object-fit: contain;
     position: relative;
     z-index: 3;
+    @media(min-width: 768px) and (max-width:1199){
+        top: 8rem;
+    }
+    
 }
  .tammina-session{
     background-image: url('../UAMS-images/UAMS-images/hero-bg-shape\ \(2\).svg');
@@ -8324,8 +8328,14 @@ position: relative;
     place-content: center;
     padding: 50px 0px;
     height: 1100px;
+    @media (max-width:767px){
+        height: 1750px;
+    }
     .tammina-session-reports{
         position: relative;
+        @media (min-width:768px) and (max-width:991px) {
+            top: 9rem;
+        }
         &::after{
         content:'';
         background-image: url('../UAMS-images/UAMS-images/Home-3D-Cube.svg');
@@ -8356,7 +8366,10 @@ position: relative;
     }
     .tammina-session-align{
         position: relative;
-        bottom:5rem;
+        bottom:0;
+        @media (min-width:768px) and (max-width:991px){
+            top: 37px;
+        }
         &::after{
             content:'';
             background-image: url('../UAMS-images/UAMS-images/Home-3D-Cube.svg');
@@ -8377,6 +8390,10 @@ position: relative;
 border-radius: 33px;
 @media(max-width:991px){
     height: 230px;
+}
+@media (max-width:767px){
+    position: relative;
+    top: 7rem;
 }
     display: grid;
     text-align: center;
@@ -8404,6 +8421,9 @@ border-radius: 33px;
     }
     .tammina-block{
         position: relative;
+        @media (max-width:767px){
+            top: 10rem;
+        }
         &::after{
             content: '';
             width: 150px;
@@ -8619,8 +8639,12 @@ border-radius: 10px;
    position: relative;
    left: 75px;
    top: 52px;
-   @media (max-width:991px){
+   @media (min-width:768px) and (max-width:991px){
     top: 0;
+   }
+   @media (max-width:767px){
+    top: 83px;
+    left: 15px;
    }
    &::before{
     content:'';
@@ -8680,14 +8704,19 @@ position: relative;
 }
 }
 
-.triangle-img{
-    position: relative;
-    &::after{
-        content: " ";
-        background-image: url("../img/why-tech-3D-traingle-1-big.svg");
-    }
-}
-
 .part11{
 margin-top: 25rem;
+}
+.methodology-mobile{
+    @media (max-width:480px){
+        position: relative;
+        top: 9rem;
+        text-align: center;
+    }
+}
+.appian-code-mobile{
+    @media (max-width:767px){
+        position: relative;
+        top: 14rem;
+    }
 }
