@@ -5926,6 +5926,7 @@ Footer Area
     background-position: center center;
     background-repeat: no-repeat;
     z-index: 1;
+    margin-top: 135px;
 }
 .footer-top {
     border-bottom: 1px solid #e6e6e6;
@@ -7202,24 +7203,18 @@ left: -40px;
 }
 
 .first-section{
-    background-image: url('../TBMS/Vector-bg-1.svg');
+    background-image: url('../UAMS-images/UAMS-images/home-hero-bg-shape.svg');
     width: 100%;
     height: auto;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
     @media(min-width:992px){
-        height: 160vh;
+        // height: 160vh;
     }
     .first-row{
-        height: 90vh;
+        height: 95vh;
         align-items: center;
-        @media(min-width:1350px){
-            height: 85vh;
-        }
-        @media(min-width:1550px){
-            height: 65vh;
-        }
     }
     .first-section-content{
         height: 100%;
@@ -7236,107 +7231,78 @@ left: -40px;
             @media(max-width:320px){
                 font-size: 38px;
             }
+            .management{
+                color: #fff;
+                font-size:36px;
+            }
+        }
+        h3{
+            font-size: 3rem;
+            font-weight: 200;
         }
        .first-section-image{
-        background-image: url('../TBMS/Mockup-Home.svg');
-    width: 68%;
-    height: 80%;
-    position: absolute;
-    background-repeat: no-repeat;
-    background-position: right;
-   right: 7em;
-    background-size: contain;
-
-       }
-       .part1{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-       }
-    }
-        .first-section_content{
-    font-size: 39px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    -webkit-text-stroke: 1px #ffff;
-    -webkit-text-fill-color: #189795;
-    font-weight: 700;
-    font-style: italic;
-
-        }
-       
-    .gare-circle-low{
-        position: absolute;
-        bottom: 0;
-        right: calc(100% - 90%);
-        img{
-            animation: rotating 7s linear infinite
-        }
-       }
-       .gare-circle-samll{
-        position: absolute;
-        bottom: 10px;
-        right: calc(100% - 75%); 
-        img{
-            animation: rotating 7s linear infinite
-        }
-      }
-    .man-path{
-        position: absolute;
-        top:0;
-        right:-31px;
-        img{
-            width: 250px;
-            height: 550px;
-        }
-        .daise-img{
-            position: absolute;
-            width: 100px;
-            margin-top: 65px;
-            height: 100px
-        }
-        // &::after{
-        //     content: '';
-        //     background-image: url(../TAMS\ imgs/low-code-3D-Cube-2-small.svg);
-        //     position: absolute;
-        //     width: 100px;
-        //     height: 100px;
-        //     bottom: 0;
-        //     background-size: contain;
-        //     background-repeat: no-repeat;
-        //     }
-    }
-    .gare-circle{
+        // background-image: url('../UAMS-images/UAMS-images/mockup-home\ copy\ 1.svg');
+        // height: 80%;
+        background-repeat: no-repeat;
+        background-size: contain;
         position: relative;
-    top: -161px;
-    left: 0;
-    img{
-        animation: rotating 7s linear infinite
-    }
-    }
-    .laptop-div{
+        top: 2rem;
+         left: -62px;
+       }
+       .sitting-person{
+        img{
+            position: absolute;
+            top: 16rem;
+            right: 18rem;
+            width: 46%;
+            animation: movebounce-up 8s infinite;
+        }
+       }
+       .books{
         position: absolute;
-        top: 0;
-        bottom: 0;
-        margin: 0;
-        left: 0;
-        right: 0;
+        bottom: -50px;
+        left: 40rem;
+        z-index: -1;
+       }
+       .house{
+        position: absolute;
+        bottom: -78px;
+        left: -105px;
+       }
     }
-}
+       .laptop-view{
+        background-image: url(../UAMS-images/UAMS-images/Home-flag-house.svg);
+        background-repeat: no-repeat;
+        bottom: 0;
+        .house-1{
+            position: absolute;
+        }
+        .cube{
+            img{
+            position: absolute;
+            bottom: -17rem;
+            right: 5px;
+            animation: rotating 7s linear infinite;
+            }
+        }
+       }
+}     
+    
+     
+    
+    
+ 
 
-.into-card{
-    color: #f0f0f0;
-    border-radius: 10px;
-}
+
 
 .methodology{
-    background-image: url('../TBMS/Methedology-bg.svg');
+    background-image: url('../UAMS-images/UAMS-images/hero-bg-shape\ \(1\).svg');
     background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
         display: grid;
         place-content: center;
+        height: 100vh;
         .methodology-session-text{
             font-weight: 500;
             font-size: 30px;
@@ -7441,6 +7407,64 @@ left: -40px;
                 font-size: 18px;
             }
         }
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            img{
+                position: absolute;
+                @media (max-width:767px){
+                    display: none;
+                }            
+            }
+            .img-1{
+                top: -33rem;
+                width: 18%;
+                left: 46rem;
+                z-index: 2;
+                @media (min-width:992px) and (max-width:1199px){
+                    top: -26rem;
+                    left: 39rem;
+                }
+                @media (min-width:768px) and (max-width:991px){
+                    top: -20rem;
+                    left: 29rem;
+                }
+            }
+            }
+            .img-2{
+                top: -38rem;
+                left: 6rem;
+                z-index: 1;
+                @media (min-width:992px) and (max-width:1199px){
+                    top: -30rem;
+                }
+                @media (min-width:768px) and (max-width:991px){
+                    top: -23rem;
+                }
+            }
+            .img-3{
+                top: -14rem;
+                right: 34rem;
+                @media (min-width:992px) and (max-width:1199px){
+                    right: 26rem;
+                }
+                @media (min-width:768px) and (max-width:991px){
+                    right: 16rem;
+                }
+            }
+            .img-4{
+                top: -7rem;
+                z-index: 3;
+                right: 36rem;
+                @media (min-width:992px) and (max-width:1199px){
+                    right: 28rem;
+                }
+                @media (min-width:768px) and (max-width:991px){
+                   right: 18rem;
+                }
+            }
         .left-part{
             position: relative;
             .polygon-1{
@@ -8274,38 +8298,67 @@ position: relative;
   }
 .reports-img{
     object-fit: contain;
+    position: relative;
+    z-index: 3;
 }
  .tammina-session{
-    background-image: url('../TBMS/Vector-background.svg');
+    background-image: url('../UAMS-images/UAMS-images/hero-bg-shape\ \(2\).svg');
     width: 100%;
     background-size: cover;
     display: grid;
     place-content: center;
     padding: 50px 0px;
+    height: 1100px;
     .tammina-session-reports{
         position: relative;
         &::after{
         content:'';
-        background-image: url('../TAMS\ imgs/Vector-squre.svg');
+        background-image: url('../UAMS-images/UAMS-images/Home-3D-Cube.svg');
         position: absolute;
         background-repeat: no-repeat;
         width: 100px;
         height: 100px;
         background-size: contain;
-        right: 0;
-        top: -83px;
+        right: 117px;
+        top: 40rem;
         animation: rotating 7s linear infinite;
+        z-index: 3;
 
         }
+        &::before{
+            content:'';
+            background-image: url('../UAMS-images/UAMS-images/Home-3D-Cube.svg');
+            position: absolute;
+            background-repeat: no-repeat;
+            width: 100px;
+            height: 100px;
+            background-size: contain;
+            left: 10rem;
+            top: 16rem;
+            animation: rotating 7s linear infinite;
+            z-index: 2;
+            }
     }
     .tammina-session-align{
         position: relative;
-        top:8rem
+        bottom:5rem;
+        &::after{
+            content:'';
+            background-image: url('../UAMS-images/UAMS-images/Home-3D-Cube.svg');
+            position: absolute;
+            background-repeat: no-repeat;
+            width: 100px;
+            height: 100px;
+            background-size: contain;
+            right:74rem;
+            top: 0;
+            animation: rotating 7s linear infinite;
+            }
     }
     .design-card-support{
         height: 150px;
-        background: linear-gradient(96.21deg, #F0962C 22.34%, #25C0CA 73.25%);
-box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.44);
+        background: linear-gradient(96.21deg, #247378 22.34%, #782470 73.25%);
+        box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.44);
 border-radius: 33px;
 @media(max-width:991px){
     height: 230px;
@@ -8332,7 +8385,7 @@ border-radius: 33px;
     }
     .tech-robo-align{
         position: relative;
-        top: 41px;
+        top: 113px;
     }
     .tammina-block{
         position: relative;
@@ -8536,123 +8589,53 @@ font-weight: bold;
 .appian-text{
     font-weight: 400;
 }
-.ellipse-laptop{
-    position: relative;
-    width: 35%;
-    left: 10%;
-    top: -53px;
-    @media (max-width:767px){
-        display: none;
-    }
-    img{
-        position: absolute;
-    }
-    .img-1{
-        left: 0;
-        top: 0;
-        width: 59%;
-    }
-    .img-2{
-        width: 64%;
-        bottom: -21%;
-        right: 39%;
-        @media (min-width:768px) and (max-width:991px){
-            bottom: 39%;
-        }
-    }
-    .img-3{
-        width: 42%;
-        left: 11%;
-        top: 13%;
-    }
-}
-.polygon-circle{
-    position: relative;
-    img{
-        position: absolute;
-        bottom: 15rem;
-        right: -3rem;
-    }
-    @media (max-width:767px){
-        display: none;
-    }
-    .rotate {
-        animation: rotation 2s infinite linear;
-      }
-      @keyframes rotation {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(360deg);
-        }
-      }
-}
-.pulser {
-    width: 60px;
-    position: absolute;
-    bottom: -68rem;
-    @media (min-width:768px) and (max-width:1199px) {
-        bottom: -97rem;
-    }
-    border-radius: 50%;
-    @media (max-width:767px){
-       display: none;
-    }
-  }
-  
-  .pulser::after {
-    animation: pulse 1000ms cubic-bezier(0.9, 0.7, 0.5, 0.9) infinite;
-  }
-  
-  @keyframes pulse {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      transform: scale(1.4);
-      opacity: 0.4;
-    }
-  }
-  
-  .pulser::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
+.rectangle-blue{
+background: #2D0D4D;
+border: 2px solid #FFFFFF;
+box-shadow: 0px -10px 58px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+   height: auto;
+   width: 100%;
+   font-size: 13px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   position: relative;
+   left: 75px;
+   top: 52px;
+   @media (max-width:991px){
     top: 0;
-    left: 0;
-    background: gold;
-    border-radius: 50%;
-  }
-  .white-circle{
+   }
+   &::before{
+    content:'';
+    background-image: url('../UAMS-images/UAMS-images/why-tech-3D-traingle-1-big.svg');
     position: absolute;
-    top: 188rem;
-    left: 70rem;
-    @media (max-width:767px){
-        display: none;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    left: 10rem;
+    top: 16rem;
+    animation: MoveUpDown 9s linear infinite;
     }
-    @media (min-width:768px) and (max-width:991px){
-        top: 247rem;
-        left: 48rem;
+    @keyframes MoveUpDown {
+        from {
+            top: 63px;
+        }
+        to { 
+            bottom: 100px;
+        }
     }
-  }
-  .part7{
-    position: absolute;
-    // left: 80rem;
-    &::before{
-        content: "";
-        right: 90px;
-        top: 195rem;
-        position: relative;
-    }
-  }
-  .threed-cube{
-    display: flex;
-    justify-content: center;
-    margin-top: -62px;
-    animation: rotated360 9s infinite linear;
-    @media (min-width:768px) and (max-width: 991px){
-        margin-top: -62px;
-    }
-  }
+    &::after{
+        content:'';
+        background-image: url('../UAMS-images/UAMS-images/Home-3D-Cube.svg');
+        position: absolute;
+        background-repeat: no-repeat;
+        width: 100px;
+        height: 100px;
+        background-size: contain;
+        right:0;
+        top: 7rem;
+        animation: rotating 7s linear infinite;
+        }
+}
