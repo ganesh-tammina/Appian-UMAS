@@ -8720,7 +8720,7 @@ area {
 
 @media (max-width: 767px) {
   .bg {
-    height: 230vh;
+    height: 275vh;
   }
 }
 
@@ -9284,8 +9284,18 @@ area {
 
 .card-align .part9 {
   position: absolute;
-  left: -35px;
-  top: 180px;
+  left: -72px;
+  top: 165px;
+}
+
+@media (max-width: 991px) {
+  .card-align .part9 {
+    left: -65px;
+    top: 145px;
+  }
+  .card-align .part9 img {
+    width: 50%;
+  }
 }
 
 .card-align-left {
