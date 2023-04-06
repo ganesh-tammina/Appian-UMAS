@@ -7999,6 +7999,17 @@ left: -40px;
                 width: 50%;
             }
         }
+        img{
+            animation: MoveUpDown 5s linear infinite;
+            @keyframes MoveUpDown {
+                0%, 100% {
+                  bottom: 0;
+                }
+                50% {
+                  bottom: 100px;
+                }
+              }
+        }
     }
 }
 
@@ -8405,6 +8416,7 @@ border-radius: 33px;
 @media (max-width:767px){
     position: relative;
     top: 7rem;
+    height: 300px;
 }
     display: grid;
     text-align: center;
@@ -8414,7 +8426,7 @@ border-radius: 33px;
             .Connect-btn{
                 border: 3px solid #FFFFFF;
                 border-radius: 9px;
-                height: 85px;
+                height: 70px;
                 width: 215px;
                 background-color: transparent;
                 font-weight: 400;
@@ -8422,13 +8434,27 @@ border-radius: 33px;
                 line-height: 45px;
                 text-transform: capitalize;
                 color: #FFFFFF;
+                animation: flicker 0.5s ease-in-out infinite alternate;
+                &:hover {
+                    color: white;
+                }
+                @keyframes flicker {
+                    0% {
+                        opacity: 0.5;
+                        text-shadow: 2px 2px 10px blue;
+                    }
+                    100% {
+                        opacity: 1;
+                        text-shadow: 2px 2px 20px blue;
+                    }
+                }
                 }
         }
 
     }
     .tech-robo-align{
         position: relative;
-        top: 113px;
+        top: 80px;
     }
     .tammina-block{
         position: relative;
@@ -8666,18 +8692,18 @@ border-radius: 10px;
     width: 100px;
     height: 100px;
     background-size: contain;
-    left: 10rem;
-    top: 16rem;
-    animation: MoveUpDown 9s linear infinite;
+    bottom: 60rem;
+    right: 122rem;
+    animation: MoveUpDown 7s linear infinite;
     }
     @keyframes MoveUpDown {
-        from {
-            top: 63px;
+        0%, 100% {
+          bottom: 0;
         }
-        to { 
-            bottom: 100px;
+        50% {
+          bottom: 100px;
         }
-    }
+      }
     &::after{
         content:'';
         background-image: url('../UAMS-images/UAMS-images/Home-3D-Cube.svg');
@@ -8687,7 +8713,7 @@ border-radius: 10px;
         height: 100px;
         background-size: contain;
         right:0;
-        top: 7rem;
+        bottom: 10rem;
         animation: rotating 7s linear infinite;
         }
 }
@@ -8713,7 +8739,16 @@ position: relative;
     bottom: -89px;
     position: absolute;
     right: 0;
+    animation: MoveUpDown 7s linear infinite;
 }
+@keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 100px;
+    }
+  }
 }
 
 .part11{
@@ -8768,6 +8803,81 @@ font-weight: 300;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     font-weight: bold;
+        }
+    }
+}
+.modal-content{
+    background-image: url("../img/Clip\ path\ group.svg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    .section-1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        // line-height: 8;
+        span{
+            background: linear-gradient(90.54deg, #4D7EDE -6.84%, #27AEE8 26.14%, #FF7EF2 64.31%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+    }
+    .card{
+        border-radius: 10px;
+        padding: 20px;
+        background-color: #F9F9F9;
+        box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.44);
+        h3{
+            color: #273B98;
+        }
+        .form-group{
+            button{
+                background-color: #229CF4;
+                color: #fff;
+            }
+        }
+    }
+}
+.modal-header1{
+    position: relative;
+    top: 43px;
+    z-index: 1;
+    @media (min-width: 768px) and (max-width: 991px){
+        top: 34px;
+    }
+    @media (max-width: 767px){
+        display: none;
+    }
+    button{
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url("../img/close.svg");
+            width: 74px;
+            height: 80px;
+            right: 0;
+            bottom: 0;
+        }
+    }
+    span{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        font-size: x-large;
+        color: #fff;
+        transform: translateX(-50%);
+        font-weight: 600;
+        @media (max-width: 767px){
+            color: #0049b1;
         }
     }
 }

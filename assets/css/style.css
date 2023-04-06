@@ -7644,6 +7644,17 @@ area {
     width: 50%;
   }
 }
+.card-align .part9 img {
+  animation: MoveUpDown 5s linear infinite;
+}
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 100px;
+  }
+}
 
 .card-align-left {
   position: relative;
@@ -8063,6 +8074,7 @@ area {
   .tammina-session .design-card-support {
     position: relative;
     top: 7rem;
+    height: 300px;
   }
 }
 .tammina-session .design-card-support .Connect-content {
@@ -8072,7 +8084,7 @@ area {
 .tammina-session .design-card-support .Connect-content .Connect-btn {
   border: 3px solid #FFFFFF;
   border-radius: 9px;
-  height: 85px;
+  height: 70px;
   width: 215px;
   background-color: transparent;
   font-weight: 400;
@@ -8080,10 +8092,24 @@ area {
   line-height: 45px;
   text-transform: capitalize;
   color: #FFFFFF;
+  animation: flicker 0.5s ease-in-out infinite alternate;
+}
+.tammina-session .design-card-support .Connect-content .Connect-btn:hover {
+  color: white;
+}
+@keyframes flicker {
+  0% {
+    opacity: 0.5;
+    text-shadow: 2px 2px 10px blue;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 2px 2px 20px blue;
+  }
 }
 .tammina-session .tech-robo-align {
   position: relative;
-  top: 113px;
+  top: 80px;
 }
 .tammina-session .tammina-block {
   position: relative;
@@ -8320,15 +8346,15 @@ area {
   width: 100px;
   height: 100px;
   background-size: contain;
-  left: 10rem;
-  top: 16rem;
-  animation: MoveUpDown 9s linear infinite;
+  bottom: 60rem;
+  right: 122rem;
+  animation: MoveUpDown 7s linear infinite;
 }
 @keyframes MoveUpDown {
-  from {
-    top: 63px;
+  0%, 100% {
+    bottom: 0;
   }
-  to {
+  50% {
     bottom: 100px;
   }
 }
@@ -8341,7 +8367,7 @@ area {
   height: 100px;
   background-size: contain;
   right: 0;
-  top: 7rem;
+  bottom: 10rem;
   animation: rotating 7s linear infinite;
 }
 
@@ -8369,6 +8395,15 @@ area {
   bottom: -89px;
   position: absolute;
   right: 0;
+  animation: MoveUpDown 7s linear infinite;
+}
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 100px;
+  }
 }
 
 .part11 {
@@ -8425,4 +8460,82 @@ area {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   font-weight: bold;
+}
+
+.modal-content {
+  background-image: url("../img/Clip path group.svg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.modal-content .section-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+.modal-content .section-1 span {
+  background: linear-gradient(90.54deg, #4D7EDE -6.84%, #27AEE8 26.14%, #FF7EF2 64.31%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.modal-content .card {
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #F9F9F9;
+  box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.44);
+}
+.modal-content .card h3 {
+  color: #273B98;
+}
+.modal-content .card .form-group button {
+  background-color: #229CF4;
+  color: #fff;
+}
+
+.modal-header1 {
+  position: relative;
+  top: 43px;
+  z-index: 1;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .modal-header1 {
+    top: 34px;
+  }
+}
+@media (max-width: 767px) {
+  .modal-header1 {
+    display: none;
+  }
+}
+.modal-header1 button::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/close.svg");
+  width: 74px;
+  height: 80px;
+  right: 0;
+  bottom: 0;
+}
+.modal-header1 span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  font-size: x-large;
+  color: #fff;
+  transform: translateX(-50%);
+  font-weight: 600;
+}
+@media (max-width: 767px) {
+  .modal-header1 span {
+    color: #0049b1;
+  }
 }/*# sourceMappingURL=style.css.map */
