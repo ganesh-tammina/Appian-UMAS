@@ -7995,11 +7995,11 @@ area {
   display: grid;
   place-content: center;
   padding: 50px 0px;
-  height: 1100px;
+  height: auto;
 }
 @media (max-width: 767px) {
   .tammina-session {
-    height: 1750px;
+    height: auto;
   }
 }
 .tammina-session .tammina-session-reports {
@@ -8039,6 +8039,7 @@ area {
 .tammina-session .tammina-session-align {
   position: relative;
   bottom: 0;
+  top: 70px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .tammina-session .tammina-session-align {
@@ -8058,24 +8059,12 @@ area {
   animation: rotating 7s linear infinite;
 }
 .tammina-session .design-card-support {
-  height: 150px;
+  height: auto;
   background: linear-gradient(96.21deg, #247378 22.34%, #782470 73.25%);
   box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.44);
   border-radius: 33px;
   display: grid;
   text-align: center;
-}
-@media (max-width: 991px) {
-  .tammina-session .design-card-support {
-    height: 230px;
-  }
-}
-@media (max-width: 767px) {
-  .tammina-session .design-card-support {
-    position: relative;
-    top: 7rem;
-    height: 300px;
-  }
 }
 .tammina-session .design-card-support .Connect-content {
   display: grid;
@@ -8462,80 +8451,124 @@ area {
   font-weight: bold;
 }
 
-.modal-content {
-  background-image: url("../img/Clip path group.svg");
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  padding: 50px;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
+.tem-model {
+  background: white;
+  border-radius: 33px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
-.modal-content .section-1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100%;
+.tem-model h5 {
+  font-size: 34px;
+  width: 70%;
+  margin: auto;
+  padding: 15px 0 30px 0;
 }
-.modal-content .section-1 span {
+.tem-model .stay p {
+  color: white;
+  font-size: 24px;
+  width: 80%;
+  margin: auto;
+  padding: 18px 0 18px 0;
+}
+.tem-model .think h2 {
+  color: #ffff00;
+  font-size: 40px;
+  font-weight: 600;
+  width: 80%;
+  margin: auto;
+  padding: 18px 0 18px 0;
+}
+.tem-model .Free-access p {
+  color: white;
+  font-size: 44px;
+  width: 80%;
+  margin: auto;
+  padding: 18px 0 18px 0;
+}
+
+.tem-model-header {
+  background: #229CF4;
+  height: 32.31px;
+  border-radius: 32px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  position: relative;
+}
+.tem-model-header::before {
+  content: "REGISTER";
+  position: absolute;
+  width: 321px;
+  height: 75px;
+  border-radius: 50px;
+  background: #229CF4;
+  z-index: 9;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  filter: drop-shadow(2px 0px 8px #229CF4);
+  display: grid;
+  place-content: center;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+@media (max-width: 767px) {
+  .tem-model-header::before {
+    width: 165px;
+    height: 45px;
+    font-size: 18px;
+    top: 30px;
+  }
+}
+
+.form-card {
+  background: #F9F9F9;
+  box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.24);
+  border-radius: 13px;
+}
+
+.items-seleted-text {
   background: linear-gradient(90.54deg, #4D7EDE -6.84%, #27AEE8 26.14%, #FF7EF2 64.31%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-  font-weight: 800;
-  text-transform: uppercase;
 }
-.modal-content .card {
-  border-radius: 10px;
-  padding: 20px;
-  background-color: #F9F9F9;
-  box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.44);
-}
-.modal-content .card h3 {
-  color: #273B98;
-}
-.modal-content .card .form-group button {
-  background-color: #229CF4;
-  color: #fff;
+.items-seleted-text h4 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
 }
 
-.modal-header1 {
+.items-cards-bg {
+  background-image: url("../img/Clip path.svg");
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: bottom;
+}
+
+#register {
+  display: none;
+}
+
+.register-card {
   position: relative;
-  top: 43px;
-  z-index: 1;
 }
-@media (min-width: 768px) and (max-width: 991px) {
-  .modal-header1 {
-    top: 34px;
-  }
-}
-@media (max-width: 767px) {
-  .modal-header1 {
-    display: none;
-  }
-}
-.modal-header1 button::before {
-  content: "";
+.register-card .cancel-form-btn {
   position: absolute;
-  background-image: url("../img/close.svg");
-  width: 74px;
-  height: 80px;
-  right: 0;
-  bottom: 0;
-}
-.modal-header1 span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  font-size: x-large;
-  color: #fff;
-  transform: translateX(-50%);
-  font-weight: 600;
-}
-@media (max-width: 767px) {
-  .modal-header1 span {
-    color: #0049b1;
-  }
+  width: 65px;
+  height: 65px;
+  top: 0px;
+  background: #FF4D4D;
+  border: 3px solid #FFFFFF;
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
+  right: -20px;
+  border-radius: 50%;
+  background-image: url("../img/Vector-x.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 9;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
