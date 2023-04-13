@@ -6944,6 +6944,9 @@ area {
   place-content: center;
   height: 100vh;
 }
+.methodology .information {
+  font-size: 15px;
+}
 .methodology .methodology-session-text {
   font-weight: 500;
   font-size: 30px;
@@ -7184,6 +7187,7 @@ area {
 }
 .bg p {
   color: white;
+  font-size: 14px;
 }
 
 @media (max-width: 767px) {
@@ -8238,7 +8242,7 @@ area {
 
 .service-sub-content {
   display: flex;
-  font-size: smaller;
+  font-size: 14px;
   padding: 10px;
 }
 .service-sub-content img {
@@ -8307,7 +8311,7 @@ area {
   border-radius: 10px;
   height: auto;
   width: 100%;
-  font-size: 13px;
+  font-size: 14px;
   display: flex;
   flex-direction: column;
   justify-content: center;
