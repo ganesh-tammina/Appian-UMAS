@@ -6918,7 +6918,7 @@ area {
 .first-section .laptop-view {
   background-image: url(../UAMS-images/UAMS-images/Home-flag-house.svg);
   background-repeat: no-repeat;
-  bottom: 0;
+  bottom: 100px;
 }
 @media (max-width: 767px) {
   .first-section .laptop-view {
@@ -7168,7 +7168,7 @@ area {
 .bg {
   background-image: url("../img/hero-bg-shape.svg");
   /* background-position: top; */
-  height: 165vh;
+  height: 155vh;
   background-position: center;
   background-size: cover;
   display: grid;
@@ -7187,13 +7187,16 @@ area {
 }
 .bg p {
   color: white;
-  font-size: 14px;
 }
 
 @media (max-width: 767px) {
   .service-line-image {
     display: none;
   }
+}
+
+.Text {
+  font-size: 17px;
 }
 
 .second-session {

@@ -7276,7 +7276,7 @@ left: -40px;
        .laptop-view{
         background-image: url(../UAMS-images/UAMS-images/Home-flag-house.svg);
         background-repeat: no-repeat;
-        bottom: 0;
+        bottom: 100px;
         @media (max-width:767px){
             bottom: 50px;
         }
@@ -7515,7 +7515,7 @@ left: -40px;
 .bg {
     background-image: url("../img/hero-bg-shape.svg");
     /* background-position: top; */
-    height: 165vh;
+    height: 155vh;
     background-position: center;
     background-size: cover;
     display: grid;
@@ -7529,7 +7529,7 @@ left: -40px;
     }
     p{
         color: #ffff;
-        font-size: 14px;
+        // font-size: 15px;
     }
 }
 .service-line-image{
@@ -7537,7 +7537,9 @@ left: -40px;
         display: none;
     }
 }
-
+.Text{
+    font-size: 17px;
+}
 .second-session{
     text-align: center;
     &.second-session-bg{
