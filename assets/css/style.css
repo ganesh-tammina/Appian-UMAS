@@ -337,11 +337,6 @@ Navbar Area
   padding-right: 0;
   background-color: transparent;
 }
-.navbar-light img {
-  max-width: 140px;
-  float: left;
-  padding: 10px 0;
-}
 .navbar-light .navbar-brand-sticky {
   display: none;
 }
@@ -666,12 +661,12 @@ Navbar Area
   background-color: #2966be;
   position: fixed;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-  height: 70px;
+  height: 90px;
   display: grid;
   place-items: center;
 }
 .sticky-nav .nav-bar-two .switch-box {
-  top: 20px;
+  display: none;
 }
 
 .side-nav-responsive {
@@ -5748,9 +5743,8 @@ Footer Area
 }
 
 .footer-bg2 {
-  background-image: url(../img/shape/footer-bg2.webp);
-  background-position: center center;
-  background-repeat: no-repeat;
+  background: #282828 !important;
+  font-family: Roboto, sans-serif !important;
   z-index: 1;
   margin-top: 135px;
 }
@@ -5825,7 +5819,7 @@ Footer Area
 }
 .footer-widget h3 {
   font-size: 24px;
-  color: #2966be;
+  color: #ffffff;
   margin-bottom: 15px;
 }
 .footer-widget .footer-list {
@@ -5834,12 +5828,12 @@ Footer Area
   padding: 0;
 }
 .footer-widget .footer-list li {
-  display: block;
-  color: #6c6c6c;
+  display: flex;
+  color: #ffffff;
   margin-bottom: 5px;
 }
 .footer-widget .footer-list li a {
-  color: #6c6c6c;
+  color: #ffffff;
 }
 .footer-widget .footer-list li a:hover {
   color: #ff3900;
@@ -7177,7 +7171,7 @@ area {
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .bg {
-    height: 270vh !important;
+    height: 290vh !important;
   }
 }
 @media (max-width: 1200px) {
@@ -8105,7 +8099,7 @@ area {
 }
 .tammina-session .tech-robo-align {
   position: relative;
-  top: 80px;
+  top: 92px;
 }
 .tammina-session .tammina-block {
   position: relative;
@@ -8578,4 +8572,98 @@ area {
   background-position: center;
   z-index: 9;
   cursor: pointer;
+}
+
+.play-more {
+  border: 2px solid;
+  padding: 10px 12px;
+  position: relative;
+  display: inline-block;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 0.15rem;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.play-more.click-more {
+  padding: 1px 15px;
+}
+.play-more:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.play-more:hover:before {
+  width: 100%;
+}
+
+#register {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .talk {
+    position: relative;
+    top: -167px;
+  }
+}
+
+.footer-bottom {
+  background: #4a4f54 !important;
+  padding: 0 !important;
+  padding: 0 !important;
+  height: 65px;
+  align-items: center;
+  display: flex;
+}
+
+.vc_tta-tabs-list li {
+  list-style: none;
+}
+
+.flags {
+  max-width: 38px;
+  padding: 0px 4px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 50px;
+}
+
+.engflag {
+  height: 23px !important;
+  position: relative;
+  top: 10px;
+}
+
+#Endland {
+  display: none;
+}
+
+#NotherLand {
+  display: none;
+}
+
+#india {
+  display: none;
+}
+
+#usa {
+  display: block;
+}
+
+.ml-3 {
+  margin-left: 15px;
+}
+
+.icon-width {
+  width: 10px;
+  margin: 0 13px 0 10px;
+}
+
+.sub-loc {
+  font-family: Lustria, Georgia, "Times New Roman", Times, serif;
+  font-size: 14px;
 }/*# sourceMappingURL=style.css.map */
