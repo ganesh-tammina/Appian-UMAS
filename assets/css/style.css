@@ -6896,6 +6896,11 @@ area {
   top: 2rem;
   left: -62px;
 }
+@media (max-width: 767px) {
+  .first-section .first-section-content .first-section-image {
+    left: 14px;
+  }
+}
 .first-section .first-section-content .sitting-person img {
   position: absolute;
   top: 16rem;
@@ -6921,7 +6926,7 @@ area {
 }
 @media (max-width: 767px) {
   .first-section .laptop-view {
-    bottom: 50px;
+    bottom: 0;
   }
 }
 .first-section .laptop-view .house-1 {
@@ -6942,6 +6947,11 @@ area {
   display: grid;
   place-content: center;
   height: 100vh;
+}
+@media (max-width: 991px) {
+  .methodology {
+    height: 123vh;
+  }
 }
 .methodology .information {
   font-size: 15px;
@@ -7176,7 +7186,7 @@ area {
 }
 @media (min-width: 320px) and (max-width: 480px) {
   .bg {
-    height: 290vh !important;
+    height: 340vh !important;
   }
 }
 @media (max-width: 1200px) {
@@ -7218,7 +7228,7 @@ area {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .second-session.second-session-bg {
-    top: 30vh;
+    top: 14vh;
   }
 }
 .second-session .second-session-overview {
@@ -7255,7 +7265,7 @@ area {
 }
 @media (max-width: 767px) {
   .second-session .second-session-text {
-    margin-top: 90px;
+    margin-top: 33rem;
   }
 }
 .second-session .second-session-text::before {
@@ -7677,7 +7687,7 @@ area {
 }
 @media (max-width: 767px) {
   .card-align-left {
-    top: 8px;
+    bottom: 0;
   }
 }
 
@@ -8071,6 +8081,11 @@ area {
   border-radius: 33px;
   display: grid;
   text-align: center;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .tammina-session .design-card-support {
+    margin-left: -32px;
+  }
 }
 .tammina-session .design-card-support .Connect-content {
   display: grid;
