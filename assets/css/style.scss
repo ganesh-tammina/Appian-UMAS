@@ -6112,6 +6112,9 @@ Footer Area
                 }
             }
         }
+        @media (max-width:991px){
+            text-align: center;
+        }
     }
 }
 .copy-right-list {
@@ -8990,7 +8993,7 @@ font-weight: 300;
         background: #4a4f54!important;
         padding: 0!important;
         padding: 0 !important;
-        height: 65px;
+        height: 73px;
         align-items: center;
         display: flex;
     }

@@ -5938,6 +5938,11 @@ Footer Area
   color: #1a1b1e;
   border-color: #1a1b1e;
 }
+@media (max-width: 991px) {
+  .copy-right-area .copy-right-text {
+    text-align: center;
+  }
+}
 
 .copy-right-list {
   float: right;
@@ -8615,7 +8620,7 @@ area {
   background: #4a4f54 !important;
   padding: 0 !important;
   padding: 0 !important;
-  height: 65px;
+  height: 73px;
   align-items: center;
   display: flex;
 }
