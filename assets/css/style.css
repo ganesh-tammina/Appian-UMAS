@@ -5746,7 +5746,6 @@ Footer Area
   background: #282828 !important;
   font-family: Roboto, sans-serif !important;
   z-index: 1;
-  margin-top: 135px;
 }
 
 .footer-top {
@@ -8686,4 +8685,41 @@ area {
 .sub-loc {
   font-family: Lustria, Georgia, "Times New Roman", Times, serif;
   font-size: 14px;
+}
+
+.whats-app {
+  width: 40px;
+  height: 45px;
+  background: #3498db;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  padding: 10px 5px;
+  font-weight: 700;
+  margin-left: 5px;
+  font-size: 16px;
+}
+.whats-app a {
+  visibility: hidden;
+  opacity: 0;
+}
+.whats-app.email-img {
+  background: #ea2e30;
+  top: 59%;
+}
+.whats-app:hover {
+  width: 220px;
+  transition: all 0.25s ease;
+}
+.whats-app:hover a {
+  visibility: visible;
+  margin-left: 10px;
+  color: #fff;
+  opacity: 1;
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 5px;
 }/*# sourceMappingURL=style.css.map */
