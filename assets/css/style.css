@@ -362,7 +362,6 @@ Navbar Area
 .main-nav nav .navbar-nav .nav-item a {
   text-transform: capitalize;
   color: #1a1b1e;
-  font-weight: 600;
   margin-left: 12px;
   margin-right: 12px;
 }
@@ -405,7 +404,6 @@ Navbar Area
   color: #1a1b1e !important;
   position: relative;
   transition: 0.7s;
-  font-weight: 600;
   padding: 10px;
   border-bottom: 1px dashed #ebebeb;
 }
@@ -658,7 +656,7 @@ Navbar Area
 }
 .sticky-nav .nav-bar-two {
   top: 0;
-  background-color: #2966be;
+  background-color: #3498db;
   position: fixed;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   height: 90px;
@@ -5743,9 +5741,10 @@ Footer Area
 }
 
 .footer-bg2 {
+  padding: 5px 0px;
   background: #282828 !important;
   font-family: Roboto, sans-serif !important;
-  z-index: 1;
+  min-height: 325px;
 }
 
 .footer-top {
@@ -5813,13 +5812,12 @@ Footer Area
   animation: tada 1s linear;
 }
 
-.footer-widget {
-  margin-bottom: 30px;
-}
 .footer-widget h3 {
-  font-size: 24px;
-  color: #ffffff;
+  font-size: 17px;
+  color: #fff;
   margin-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 .footer-widget .footer-list {
   list-style: none;
@@ -5828,11 +5826,14 @@ Footer Area
 }
 .footer-widget .footer-list li {
   display: flex;
-  color: #ffffff;
-  margin-bottom: 5px;
+  color: #fff;
+  line-height: 2;
+  font-size: 14px;
 }
 .footer-widget .footer-list li a {
-  color: #ffffff;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
 }
 .footer-widget .footer-list li a:hover {
   color: #ff3900;
@@ -5925,26 +5926,29 @@ Footer Area
   height: 100%;
   background-color: #f0f0f0;
 }
+.copy-right-area .copy-right-text a {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  font-family: "Nunito Sans" !important;
+}
 .copy-right-area .copy-right-text p {
   color: #2966be;
   margin-bottom: 0;
 }
 .copy-right-area .copy-right-text p a {
-  color: #ff3900;
-  border-bottom: 1px solid #ff3900;
+  color: #fff;
+  font-size: 14px;
 }
 .copy-right-area .copy-right-text p a:hover {
-  color: #1a1b1e;
-  border-color: #1a1b1e;
-}
-@media (max-width: 991px) {
-  .copy-right-area .copy-right-text {
-    text-align: center;
-  }
+  color: #fff;
 }
 
-.copy-right-list {
-  float: right;
+.copy-right-list a {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none !important;
+  font-family: "Nunito Sans" !important;
 }
 .copy-right-list ul {
   list-style: none;
@@ -5963,13 +5967,13 @@ Footer Area
   right: -12px;
   height: 14px;
   width: 1px;
-  background-color: #2966be;
 }
 .copy-right-list ul li:last-child::before {
   display: none;
 }
 .copy-right-list ul li a {
-  color: #2966be;
+  color: #fff;
+  font-size: 14px;
 }
 
 /*==================================
@@ -6252,17 +6256,17 @@ Back To Top Button
 }
 
 .top-btn {
-  background-image: linear-gradient(to right, #ff2500, #ff7100);
+  background: #002e5b;
   color: #ffffff;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  box-shadow: 0 0 15px #ff3900;
+  box-shadow: #002e5b;
   font-size: 20px;
   display: inline-block;
   text-align: center;
   line-height: 45px;
-  transition: 0.9s;
+  transition: 0.5s;
 }
 .top-btn:hover {
   background-image: linear-gradient(to right, rgba(7, 1, 0, 0.9058823529), rgba(7, 3, 0, 0.7333333333));
@@ -8634,7 +8638,7 @@ area {
   background: #4a4f54 !important;
   padding: 0 !important;
   padding: 0 !important;
-  height: 73px;
+  height: 65px;
   align-items: center;
   display: flex;
 }
@@ -8705,6 +8709,7 @@ area {
 .whats-app a {
   visibility: hidden;
   opacity: 0;
+  text-decoration: none !important;
 }
 .whats-app.email-img {
   background: #ea2e30;
@@ -8722,4 +8727,11 @@ area {
   font-size: 14px;
   font-weight: 700;
   margin-left: 5px;
+}
+
+.techno-img {
+  width: 80%;
+  -o-object-fit: fill;
+  object-fit: fill;
+  height: 60px;
 }/*# sourceMappingURL=style.css.map */
