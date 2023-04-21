@@ -7077,42 +7077,42 @@ area {
   }
 }
 .image-container .img-1 {
-  top: -33rem;
+  top: 0rem;
   width: 18%;
   left: 46rem;
   z-index: 2;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .image-container .img-1 {
-    top: -26rem;
+    top: 4rem;
     left: 39rem;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .image-container .img-1 {
-    top: -20rem;
+    top: 13rem;
     left: 29rem;
   }
 }
 
 .img-2 {
-  top: -38rem;
+  top: -4rem;
   left: 6rem;
   z-index: 1;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .img-2 {
-    top: -30rem;
+    top: 0rem;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .img-2 {
-    top: -23rem;
+    top: 10rem;
   }
 }
 
 .img-3 {
-  top: -14rem;
+  top: 20rem;
   right: 34rem;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -7127,7 +7127,7 @@ area {
 }
 
 .img-4 {
-  top: -7rem;
+  top: 26rem;
   z-index: 3;
   right: 36rem;
 }
