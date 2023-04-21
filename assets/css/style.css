@@ -401,10 +401,11 @@ Navbar Area
 }
 .main-nav nav .navbar-nav .nav-item .dropdown-menu li a {
   text-transform: capitalize;
-  color: #1a1b1e !important;
+  color: #202020 !important;
   position: relative;
   transition: 0.7s;
-  padding: 10px;
+  padding: 5px 20px;
+  font-size: 14px !important;
   border-bottom: 1px dashed #ebebeb;
 }
 .main-nav nav .navbar-nav .nav-item .dropdown-menu li a.active {
@@ -541,6 +542,7 @@ Navbar Area
   position: relative;
   padding-bottom: 15px;
   text-decoration: none;
+  cursor: pointer;
 }
 .nav-bar-two nav .navbar-nav .nav-item a:hover, .nav-bar-two nav .navbar-nav .nav-item a :focus {
   color: #ffffff !important;
